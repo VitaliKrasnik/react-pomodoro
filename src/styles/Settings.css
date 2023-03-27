@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arial+Rounded+MT+Bold&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background-color 0.5s ease;
+}
+
+.App.pomodoro {
+  background-color: rgb(166, 53, 53);
+}
+
+.App.short-break {
+  background-color: rgb(26, 93, 98);
+}
+
+.App.long-break {
+  background-color: rgb(37, 92, 131);
+}
+
+.counter-area {
+  position: relative;
+  width: 500px;
+  height: 330px;
+  padding: 20px;
+  padding-bottom: 50px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+.tab {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  color: white;
+}
+
+.tab.active {
+  font-weight: bold;
+}
+
+.timer {
+  font-size: 120px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 50px;
+}
+
+.buttons {
+  margin-bottom: 10px;
+}
+
+.start-button {
+  font-size: 24px;
+  background-color: white;
+  color: transparent;
+  -webkit-text-stroke: 1px;
+  width: 150px; 
+  height: 50px; 
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #86518e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pomodoro-icons {
+  display: flex;
+  align-items: center;
+}
+
+.pomodoro-section {
+  background-color: white;
+  padding: 20px;
+  margin-top: 80px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 35px;
+}
+
+.pomodoro-icon {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(186, 73, 73); /* Add this line */
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.delete-pomodoros {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  color: white;
+  margin-right: 10px;
+}
+
+.fullscreen {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: white;
+}
+
+.settingsScreen {
+  position: absolute;
+  bottom: 60px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: white;
+}
+
+
+.motivational-message {
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.settings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.settings-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  margin-bottom: 1rem;
+}
+
+.settings input[type='number'] {
+  width: 80px;
+}
